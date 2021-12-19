@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resource  :registration,   only: %i[new create]
   resource  :password,       only: %i[edit update]
   resource  :password_reset, only: %i[new edit update create]
+  resources :dialogs
 
   # Defines the root path route ("/")
   root 'welcome#index'

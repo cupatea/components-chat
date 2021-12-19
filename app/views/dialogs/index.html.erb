@@ -1,0 +1,12 @@
+<h1>Dialogs</h1>
+
+<div id="tests">
+  <% @dialogs.each do |dialog| %>
+    <%= render dialog %>
+    <p>
+      <%= link_to "Show this dialog", dialog %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dialog", new_dialog_path %>
