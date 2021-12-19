@@ -18,6 +18,8 @@ gem 'view_component'
 group :development, :test do
   gem 'pry', '~> 0.14.1'
   gem 'rspec-rails', '~> 5.0', '>= 5.0.2'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker'
 end
 
 group :development do
@@ -33,4 +35,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'shoulda-matchers', '~> 5.0'
 end
